@@ -148,6 +148,7 @@ main {
 }
 
 .first-section-content > h2 {
+    text-align: center;
     font-size: clamp(1em, 2.5em, 4em);
 }
 
@@ -188,7 +189,7 @@ main {
 
 .second-section {
     display: flex;
-    height: 90vh;
+    min-height: 490px;
     background-color: #064579;
     justify-content: center;
 }
@@ -202,22 +203,24 @@ main {
 }
 
 .second-section-content h2 {
-    font-size: clamp(2em, 3em, 5em);
+    font-size: clamp(1.5em, 2.5em, 5em);
     color: white;
 }
 
 
 .second-section-content > div {
-    gap: 4em;
+    gap: 1em;
     display: flex; 
     width: 70%;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .second-section-content > div p {
     text-align: justify;
     color: rgb(226, 226, 226);
+    margin-bottom: 1em;
 }
 
 .second-section-content > div img {
@@ -225,6 +228,68 @@ main {
 
 }
 
+.third-section {
+    width: 100%;
+    height: 100%;
+}
+
+.third-section-content {
+    gap: 3em;
+    padding: 3.5em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.third-section-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-section-text-content > h2 {
+    font-size: clamp(1.5em, 2.5em, 5em);  
+    text-align: center;
+}
+
+.third-section-text-content > p {
+    max-width: 70%;
+    text-align: center;
+
+}
+
+.kind-of-uses-content {
+    gap: 1.5em;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kind-of-uses-content > div {
+    gap: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #dfdfdf;
+    padding: 2.5em;
+    width: 280px ;
+    min-height: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.kind-of-uses-content > div > img {
+    width: 150px;
+}
+
+.kind-of-uses-content > div > p, h3 {
+    text-align: center;
+}
 
 footer {
     display: flex;
@@ -476,8 +541,12 @@ footer {
 
 .main-section-contact-us {
     margin-top: 5em;
-    height: 85vh;
+    height: 100%;
     width: 100%;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-us {
@@ -494,7 +563,7 @@ footer {
 }
  
 .contant-us-form {
-    width: 50%;
+    width: 100%;
     height: 100%;
     padding: 1.5em;
     display: flex;
@@ -532,12 +601,26 @@ footer {
     background-color: #121212;  
 }
 
+.contact-us-image-container {
+    height: 100%;
+    padding: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.contact-us-image-container img {
+    width: 100%;
+    height: auto;
+}
 
+.contact-us-image-container {
+}
 
-
-
-
+.contact-us-image-container img {
+    min-width: 100%;
+}
 
 
 @media (max-width: 768px) {
@@ -575,7 +658,7 @@ footer {
     }
 
     .cards {
-        padding: 1em;
+        padding: 0;
         gap: 3.5em;
         display: flex;
         flex-direction: column;
@@ -596,12 +679,18 @@ footer {
         width: 100%;
     }
 
+    .frist-section-content {
+        padding: 1.5em;
+    }
+
+
     .second-section-content h2 {
         text-align: center;
     }
 
     .second-section-content > div {
-        max-width: 85%;
+        padding: 1.5em;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }  
@@ -630,6 +719,7 @@ footer {
 
     .strength-content {
         width: 100%;
+        padding: 1.5em;
     }
     
     .strength-content > div {
@@ -642,8 +732,11 @@ footer {
 
     .footer-main-logo img:first-child {
         width: 150px;
-}
+    }
 
+    footer {
+        padding: 1.5em;
+    }
 
     .contant-us-form {
         width: 100%;
@@ -675,4 +768,28 @@ footer {
         margin-top: 100px;
     }
 
+
+    .third-section {
+        width: 100%;
+    }
+
+    .third-section-content {
+        width: 100%;
+        padding: 1.5em;
+    }
+
+    .kind-of-uses-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .kind-of-uses-content  div {
+        width: 100%;
+    }
+
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+    }
 }
